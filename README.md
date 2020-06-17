@@ -20,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In a controller:
+```
+before_action :set_copyright
+
+def set_copyright
+  @copyright = DevcampCopyrightViewTool::Renderer.copyright 'Antun Karlovac', 'All rights reserved'
+end
+```
 
 ## Development
 
